@@ -4,7 +4,8 @@
   "description": "Send to slack when smile ",
   "main": "index.js",
   "scripts": {
-    "test": "eater"
+    "test": "eater",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
