@@ -1,0 +1,31 @@
+{
+  "name": "smile_shot",
+  "version": "0.0.1",
+  "description": "Send to slack when smile ",
+  "main": "index.js",
+  "scripts": {
+    "test": "eater"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosuke-furukawa/smile_shot.git"
+  },
+  "keywords": [
+    "smile",
+    "detect"
+  ],
+  "author": "yosuke-furukawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yosuke-furukawa/smile_shot/issues"
+  },
+  "homepage": "https://github.com/yosuke-furukawa/smile_shot#readme",
+  "dependencies": {
+    "@slack/client": "^3.4.0",
+    "gcloud": "^0.35.0",
+    "opencv": "^5.0.0"
+  },
+  "devDependencies": {
+    "eater": "^1.7.0"
+  }
+}
