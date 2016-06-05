@@ -22,9 +22,23 @@ function readCam() {
     smileDetector.on('face', (faces) => {
       console.log('detect face ...');
       image.save(imagePath);
-      analyzer.analyze(imagePath).then((labels) => {
-        console.log('analyze ... ' + JSON.stringify(labels));
-        return sender.upload(imagePath);
+      analyzer.analyze(imagePath).then((data) => {
+        console.log('analyze ... ' + JSON.stringify(data));
+        const faces = data.faces;
+        const labels = data.labels;
+        const emo = faces.map((face) => {
+        return `
+          happy: ${face.happy},
+          dark: ${face.dark},
+          sad: ${face.sad},
+          surprised: ${face.surprised},
+          blurry: ${face.blurry},
+          mad: ${face.mad},
+          hat: ${face.hat},
+        `;
+        });
+        const message = `${emo}, labels: ${labels}`;
+        return sender.upload(imagePath, message);
       }).then((res) => {
         console.log('send slack ...');
       }).catch((e) => {
