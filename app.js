@@ -1,3 +1,4 @@
+'use strict';
 const opencv = require('opencv');
 const Sender = require('./lib/send_slack');
 const SmileDetector = require('./lib/detect_smile');
