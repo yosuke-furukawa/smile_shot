@@ -6,7 +6,7 @@ if the image has some smiles ( :D ) you can get the smiles from slack.
 
 In my case, I would like to see my daughter face when she smiles.
 
-![haruka]()
+![haruka](https://cloud.githubusercontent.com/assets/555645/15806272/d51bd222-2b7a-11e6-9e12-4099f990eaee.jpeg)
 
 # how to use
 
