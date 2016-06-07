@@ -24,9 +24,12 @@
   "dependencies": {
     "@slack/client": "^3.4.0",
     "gcloud": "^0.35.0",
-    "opencv": "^5.0.0"
+    "opencv": "^5.0.0",
+    "smile-face-detector": "^1.0.1"
   },
   "devDependencies": {
-    "eater": "^1.7.0"
+    "eater": "^1.7.0",
+    "must-call": "^1.0.0",
+    "power-assert": "^1.4.1"
   }
 }
